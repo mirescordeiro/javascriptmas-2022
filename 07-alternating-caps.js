@@ -8,8 +8,8 @@ Example output: "I'M So hApPy iT'S MoNdAy"
 
 function altCaps(str){
   let letters = str.split('');
-  let capitalizeOddLetters = letters.map((letter,index) => index%2==1 ? letter.toUpperCase() : letter);
-  return capitalizeOddLetters.join('');
+  let capitalizeEvenLetters = letters.map((letter,index) => index%2==0 ? letter.toUpperCase() : letter);
+  return capitalizeEvenLetters.join('');
 }
 
 console.log(altCaps("When you visit Portland you have to go to VooDoo Donuts"));
